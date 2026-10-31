@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Запись на приём — Клиника «Тихая»</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <span class="logo-mark">Т</span>
+      <span class="lh-1"><strong>Тихая</strong><br><small class="text-muted">Клиника</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Меню">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">О клинике</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
+        <li class="nav-item"><a class="nav-link" href="doctors.html">Врачи</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <span class="small d-none d-xl-inline">+7 (495) 018-24-24</span>
+        <a class="btn btn-primary" href="booking.html">Записаться на приём</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<header class="page-head py-5">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Главная</a></li><li class="breadcrumb-item active">Запись на приём</li></ol></nav>
+    <h1 class="display-5">Запишитесь на приём онлайн</h1>
+    <p class="lead text-muted col-lg-8 mb-0">Выберите врача и удобное время, оставьте контакты — мы подтвердим запись и пришлём напоминание.</p>
+  </div>
+</header>
+<main class="container pb-4">
+  <form class="row g-4" action="#" method="post" onsubmit="alert('Демо: заявка отправлена'); return false;">
+    <div class="col-lg-8">
+      <div class="card mb-4"><div class="card-body p-4">
+        <h2 class="h4 mb-3">1. Специалист и услуга</h2>
+        <div class="mb-3"><label for="doc" class="form-label">Врач</label><select id="doc" class="form-select"><option>Анна Сергеевна Лебедева — Кардиолог</option><option>Илья Викторович Смирнов — Терапевт</option><option>Елена Михайловна Орлова — Эндокринолог</option><option>Дмитрий Алексеевич Волков — Невролог</option><option>Мария Петровна Кузнецова — Педиатр</option><option>Сергей Николаевич Морозов — Кардиолог</option></select></div>
+        <div class="mb-0"><label for="srv" class="form-label">Услуга</label>
+          <select id="srv" class="form-select"><option>Первичный приём кардиолога · 45 минут · 3 800 ₽</option><option>Консультация терапевта · 30 минут · 2 900 ₽</option><option>Консультация эндокринолога · 40 минут · 3 500 ₽</option></select>
+          <div class="form-text">Оплата в клинике перед приёмом.</div></div>
+      </div></div>
+
+      <div class="card mb-4"><div class="card-body p-4">
+        <h2 class="h4 mb-3">2. Дата и время</h2>
+        <div class="row g-3">
+          <div class="col-md-6"><label for="date" class="form-label">Дата приёма</label><input id="date" type="date" class="form-control" value="2026-11-03" required></div>
+          <div class="col-md-6"><label class="form-label d-block">Свободные слоты</label>
+            <div class="btn-group flex-wrap" role="group" aria-label="Время">
+              <input type="radio" class="btn-check" name="slot" id="s1" checked><label class="btn btn-outline-primary" for="s1">10:30</label>
+              <input type="radio" class="btn-check" name="slot" id="s2"><label class="btn btn-outline-primary" for="s2">11:15</label>
+              <input type="radio" class="btn-check" name="slot" id="s3"><label class="btn btn-outline-primary" for="s3">12:00</label>
+              <input type="radio" class="btn-check" name="slot" id="s4"><label class="btn btn-outline-primary" for="s4">13:30</label>
+            </div></div>
+        </div>
+      </div></div>
+
+      <div class="card"><div class="card-body p-4">
+        <h2 class="h4 mb-3">3. Контакты пациента</h2>
+        <div class="mb-3"><label for="name" class="form-label">Имя пациента</label><input id="name" class="form-control" placeholder="Анна Сергеева" required></div>
+        <div class="mb-3"><label for="phone" class="form-label">Телефон</label><input id="phone" type="tel" class="form-control" placeholder="+7 (999) 123-45-67" required></div>
+        <div class="mb-3"><label for="mail" class="form-label">E-mail</label><input id="mail" type="email" class="form-control" placeholder="anna@example.com"><div class="form-text">Необязательно</div></div>
+        <div class="form-check mb-2"><input class="form-check-input" type="checkbox" id="c1" required><label class="form-check-label" for="c1">Я согласен на обработку персональных данных и ознакомлен с политикой конфиденциальности.</label></div>
+        <div class="form-check mb-2"><input class="form-check-input" type="checkbox" id="c2"><label class="form-check-label" for="c2">Получать напоминания о записи по SMS и e-mail.</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="c3"><label class="form-check-label" for="c3">Отправить результаты и рекомендации на e-mail после приёма.</label></div>
+      </div></div>
+    </div>
+
+    <aside class="col-lg-4">
+      <div class="card shadow-sm sticky-top" style="top:90px"><div class="card-body p-4">
+        <h2 class="h5">Ваша запись</h2>
+        <div class="d-flex align-items-center gap-3 my-3"><div class="avatar">АЛ</div><div><strong>Анна Сергеевна Лебедева</strong><br><small class="text-muted">Кардиолог, к.м.н.</small></div></div>
+        <hr>
+        <p class="mb-1 text-muted small">Услуга</p><p>Первичный приём кардиолога · 45 минут · 3 800 ₽</p>
+        <p class="mb-1 text-muted small">Дата и время</p><p>3 ноября 2026 · 10:30</p>
+        <hr>
+        <p class="mb-0 text-muted small">К оплате</p><p class="fs-3 fw-bold">3 800 ₽</p>
+        <button class="btn btn-primary w-100" type="submit">Подтвердить запись</button>
+      </div></div>
+    </aside>
+  </form>
+</main>
+<footer class="bg-dark text-light mt-5 pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5>Клиника «Тихая»</h5>
+        <p class="small text-secondary">Москва, ул. Усачёва, 15.<br>Пн–Пт 08:00–21:00, Сб–Вс 09:00–18:00.</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Контакты</h6>
+        <p class="small mb-1">+7 (495) 018-24-24</p>
+        <p class="small">hello@mail.example.com</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Разделы</h6>
+        <ul class="list-unstyled small">
+          <li><a class="footer-link" href="index.html">Главная</a></li>
+          <li><a class="footer-link" href="about.html">О клинике</a></li>
+          <li><a class="footer-link" href="services.html">Услуги</a></li>
+          <li><a class="footer-link" href="doctors.html">Врачи</a></li>
+          <li><a class="footer-link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <h6>Запись</h6>
+        <a class="footer-link small" href="booking.html">Записаться на приём</a>
+        <p class="small text-secondary mt-2">Первичный приём 45 минут — 3 800 ₽</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

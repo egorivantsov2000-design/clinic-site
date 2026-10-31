@@ -1,0 +1,74 @@
+:root {
+  --bs-primary: #2f7f79;
+  --bs-primary-rgb: 47, 127, 121;
+  --bs-link-color: #2f7f79;
+}
+
+.btn-primary {
+  --bs-btn-bg: #2f7f79;
+  --bs-btn-border-color: #2f7f79;
+  --bs-btn-hover-bg: #256863;
+  --bs-btn-hover-border-color: #256863;
+  --bs-btn-active-bg: #1f5753;
+  --bs-btn-active-border-color: #1f5753;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #000;
+  --bs-btn-border-color: #000;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #000;
+  --bs-btn-hover-border-color: #000;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #000;
+  --bs-btn-active-border-color: #000;
+  --bs-btn-focus-shadow-rgb: 0, 0, 0;
+}
+
+.logo-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #2f7f79;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.page-head {
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #edf8f2 0%, #dfeee6 100%);
+  color: #1f3a35;
+  border-bottom: 1px solid rgba(47, 127, 121, 0.22);
+}
+
+.page-head a,
+.page-head .breadcrumb-item,
+.page-head .breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(31, 58, 53, 0.9);
+}
+
+.page-head .text-muted {
+  color: rgba(31, 58, 53, 0.72) !important;
+}
+
+.footer-link {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.navbar .nav-link.active {
+  color: #2f7f79;
+  font-weight: 600;
+}
+
+.doctors-grid .card-img-top {
+  height: 450px;
+  object-fit: cover;
+}
