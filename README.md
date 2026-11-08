@@ -21,6 +21,7 @@ clinic-site/
 ├── doctor.html     # Страница врача 
 ├── booking.html    # Запись на приём 
 ├── contacts.html   # Контакты 
-├── style.css       # Собственные стили поверх Bootstrap 
+├── style.css       # Собственные стили поверх Bootstrap
+├── animations.css  # Анимации
 └── img/            # Изображения
 ```
