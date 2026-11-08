@@ -1,0 +1,61 @@
+/* ЛР №5. CSS-анимации — сайт клиники «Тихая» */
+
+/* Появление снизу вверх */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Пульсация логотипа */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.1); }
+}
+
+/* Шапка и содержимое страницы плавно появляются при загрузке */
+.page-head,
+main {
+  animation: fadeUp 0.8s ease-out;
+}
+
+/* Логотип постоянно пульсирует */
+.logo-mark {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Кнопки приподнимаются при наведении */
+.btn {
+  transition: transform 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Карточки приподнимаются и получают тень при наведении */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Фото врача увеличивается при наведении на карточку */
+.doctors-grid .card {
+  overflow: hidden;
+}
+.doctors-grid .card-img-top {
+  transition: transform 0.4s ease;
+}
+.doctors-grid .card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Плавная смена цвета ссылок в меню и подвале */
+.navbar .nav-link,
+.footer-link {
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #2f7f79;
+}
